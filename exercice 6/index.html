@@ -5,6 +5,8 @@
   <title>Exercice 6</title>
   <script src="jquery-2.2.4.js"></script>
 </head>
+<body>
+  <button type="button">Cache Cache</button>
   <ul>
     <li>Html</li>
     <li>CSS</li>
@@ -21,7 +23,9 @@
     <li class="a_cacher">Laravel</li>
   </ol>
 <script>
-  //Ecrire le JQuery ici
+  $('button').click(function(){
+    $('.a_cacher').hide()
+  });
 </script>
 </body>
 </html>

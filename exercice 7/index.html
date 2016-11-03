@@ -5,6 +5,8 @@
   <title>Exercice 7</title>
   <script src="jquery-2.2.4.js"></script>
 </head>
+<body>
+  <button type="button">Supression</button>
   <ul>
     <li>Html</li>
     <li>CSS</li>
@@ -21,7 +23,9 @@
     <li class="a_supprimer">Laravel</li>
   </ol>
 <script>
-  //Ecrire le JQuery ici
+  $('button').click(function(){
+    $('.a_supprimer').remove()
+  });
 </script>
 </body>
 </html>
